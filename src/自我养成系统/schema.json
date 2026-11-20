@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "角色": {
+      "default": {
+        "当前位置": "新出租屋",
+        "神性侵蚀度": 0,
+        "当前身体参数": {
+          "身高": 1.68,
+          "体重": 59,
+          "三围": "124L-60-95"
+        },
+        "衣物": {
+          "着装风格": "无 (当前处于全裸状态)",
+          "上装": "无",
+          "下装": "无",
+          "内衣": "无",
+          "袜子": "无",
+          "鞋履": "无",
+          "可变大衣物": {}
+        },
+        "可用点数": 100,
+        "身体强度阶位": "凡人",
+        "速度阶位": "凡人",
+        "速度数值": 10,
+        "身体强度": 10,
+        "已解锁权能": {},
+        "点数统计": {
+          "总获得点数": 100,
+          "总花费点数": 0,
+          "点数交易日志": {}
+        },
+        "颜值": 78,
+        "当前气质": "沉迷游戏的宅女气质/对现实略感疏离",
+        "当前姿势": "盘腿坐在床上，身体前倾，专注地凝视着眼前悬浮的蓝色面板",
+        "临时状态": "系统绑定后的余惊与兴奋交织，肾上腺素尚未退去",
+        "身体改造": "无",
+        "私密档案": {
+          "口腔": "湿润柔软/尚未进食，残留着睡前薄荷牙膏的凉意",
+          "胸部": "124L罩杯长乳/体积感与垂坠感并存/ふわぷに柔软/乳头因清晨凉意微微挺立",
+          "腿部": "修长白皙/久坐不出门的宅女线条，大腿软肉丰盈",
+          "足部": "尺寸普通/肤质细嫩/趾甲未涂甲油，脚心因盘腿久压微微泛红"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "当前位置": {
+          "default": "新出租屋",
+          "type": "string"
+        },
+        "神性侵蚀度": {
+          "default": 0,
+          "type": "number"
+        },
+        "当前身体参数": {
+          "default": {
+            "身高": 1.68,
+            "体重": 59,
+            "三围": "124L-60-95"
+          },
+          "type": "object",
+          "properties": {
+            "身高": {
+              "default": 1.68,
+              "type": "number"
+            },
+            "体重": {
+              "default": 59,
+              "type": "number"
+            },
+            "三围": {
+              "default": "124L-60-95",
+              "type": "string"
+            }
+          }
+        },
+        "衣物": {
+          "default": {
+            "着装风格": "无 (当前处于全裸状态)",
+            "上装": "无",
+            "下装": "无",
+            "内衣": "无",
+            "袜子": "无",
+            "鞋履": "无",
+            "可变大衣物": {}
+          },
+          "type": "object",
+          "properties": {
+            "着装风格": {
+              "default": "无 (当前处于全裸状态)",
+              "type": "string"
+            },
+            "上装": {
+              "default": "无",
+              "type": "string"
+            },
+            "下装": {
+              "default": "无",
+              "type": "string"
+            },
+            "内衣": {
+              "default": "无",
+              "type": "string"
+            },
+            "袜子": {
+              "default": "无",
+              "type": "string"
+            },
+            "鞋履": {
+              "default": "无",
+              "type": "string"
+            },
+            "可变大衣物": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "衣物名"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "description": "材质/款式/状态描述"
+              }
+            }
+          }
+        },
+        "可用点数": {
+          "default": 100,
+          "type": "number"
+        },
+        "身体强度阶位": {
+          "default": "凡人",
+          "type": "string"
+        },
+        "速度阶位": {
+          "default": "凡人",
+          "type": "string"
+        },
+        "速度数值": {
+          "default": 10,
+          "type": "number"
+        },
+        "身体强度": {
+          "default": 10,
+          "type": "number"
+        },
+        "已解锁权能": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "权能名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "等级与效果"
+          }
+        },
+        "点数统计": {
+          "default": {
+            "总获得点数": 100,
+            "总花费点数": 0,
+            "点数交易日志": {}
+          },
+          "type": "object",
+          "properties": {
+            "总获得点数": {
+              "default": 100,
+              "type": "number"
+            },
+            "总花费点数": {
+              "default": 0,
+              "type": "number"
+            },
+            "点数交易日志": {
+              "default": {},
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "description": "时间戳 YYYY-MM-DD HH:MM:SS"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "description": "获得/花费 数量 来源或用途"
+              }
+            }
+          }
+        },
+        "颜值": {
+          "default": 78,
+          "type": "number"
+        },
+        "当前气质": {
+          "default": "沉迷游戏的宅女气质/对现实略感疏离",
+          "type": "string"
+        },
+        "当前姿势": {
+          "default": "盘腿坐在床上，身体前倾，专注地凝视着眼前悬浮的蓝色面板",
+          "type": "string"
+        },
+        "临时状态": {
+          "default": "系统绑定后的余惊与兴奋交织，肾上腺素尚未退去",
+          "type": "string"
+        },
+        "身体改造": {
+          "default": "无",
+          "type": "string"
+        },
+        "私密档案": {
+          "default": {
+            "口腔": "湿润柔软/尚未进食，残留着睡前薄荷牙膏的凉意",
+            "胸部": "124L罩杯长乳/体积感与垂坠感并存/ふわぷに柔软/乳头因清晨凉意微微挺立",
+            "腿部": "修长白皙/久坐不出门的宅女线条，大腿软肉丰盈",
+            "足部": "尺寸普通/肤质细嫩/趾甲未涂甲油，脚心因盘腿久压微微泛红"
+          },
+          "type": "object",
+          "properties": {
+            "口腔": {
+              "default": "湿润柔软/尚未进食，残留着睡前薄荷牙膏的凉意",
+              "type": "string"
+            },
+            "胸部": {
+              "default": "124L罩杯长乳/体积感与垂坠感并存/ふわぷに柔软/乳头因清晨凉意微微挺立",
+              "type": "string"
+            },
+            "腿部": {
+              "default": "修长白皙/久坐不出门的宅女线条，大腿软肉丰盈",
+              "type": "string"
+            },
+            "足部": {
+              "default": "尺寸普通/肤质细嫩/趾甲未涂甲油，脚心因盘腿久压微微泛红",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "世界": {
+      "default": {
+        "当前纪元": "神性萌芽",
+        "日期": "初始之日",
+        "时间": "09:10",
+        "他人对该角色态度": {},
+        "已知魔女": {},
+        "内心想法": "",
+        "环境": {
+          "已造成的损失": {
+            "经济损失": 0,
+            "人员伤亡": 0
+          }
+        }
+      },
+      "type": "object",
+      "properties": {
+        "当前纪元": {
+          "default": "神性萌芽",
+          "type": "string"
+        },
+        "日期": {
+          "default": "初始之日",
+          "type": "string"
+        },
+        "时间": {
+          "default": "09:10",
+          "type": "string"
+        },
+        "他人对该角色态度": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "人物或群体名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "态度描述"
+          }
+        },
+        "已知魔女": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "description": "魔女名"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "独有能力/实力层级/性格/对主角态度/当前状态"
+          }
+        },
+        "内心想法": {
+          "default": "",
+          "type": "string"
+        },
+        "环境": {
+          "default": {
+            "已造成的损失": {
+              "经济损失": 0,
+              "人员伤亡": 0
+            }
+          },
+          "type": "object",
+          "properties": {
+            "已造成的损失": {
+              "default": {
+                "经济损失": 0,
+                "人员伤亡": 0
+              },
+              "type": "object",
+              "properties": {
+                "经济损失": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "人员伤亡": {
+                  "default": 0,
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
